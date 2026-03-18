@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"uart_can_cfg\startup_stm32f407xx.o"
+"uart_can_cfg\main.o"
+"uart_can_cfg\stm32f4xx_it.o"
+"uart_can_cfg\stm32f4xx_hal_msp.o"
+"uart_can_cfg\stm32f4xx_hal_can.o"
+"uart_can_cfg\stm32f4xx_hal_rcc.o"
+"uart_can_cfg\stm32f4xx_hal_rcc_ex.o"
+"uart_can_cfg\stm32f4xx_hal_flash.o"
+"uart_can_cfg\stm32f4xx_hal_flash_ex.o"
+"uart_can_cfg\stm32f4xx_hal_flash_ramfunc.o"
+"uart_can_cfg\stm32f4xx_hal_gpio.o"
+"uart_can_cfg\stm32f4xx_hal_dma_ex.o"
+"uart_can_cfg\stm32f4xx_hal_dma.o"
+"uart_can_cfg\stm32f4xx_hal_pwr.o"
+"uart_can_cfg\stm32f4xx_hal_pwr_ex.o"
+"uart_can_cfg\stm32f4xx_hal_cortex.o"
+"uart_can_cfg\stm32f4xx_hal.o"
+"uart_can_cfg\stm32f4xx_hal_exti.o"
+"uart_can_cfg\stm32f4xx_hal_uart.o"
+"uart_can_cfg\system_stm32f4xx.o"
+--strict --scatter "UART_CAN_cfg\UART_CAN_cfg.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UART_CAN_cfg.map" -o UART_CAN_cfg\UART_CAN_cfg.axf
