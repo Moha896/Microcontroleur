@@ -1,1 +1,1 @@
-Mettre les fichiers de travail microcontroleur dans ce répertoire
+Passerelle CAN–UART entre Arduino et STM32 : acquisition de trames CAN, filtrage matériel, puis transmission vers PC via UART en format lisible. Configuration bas niveau (CubeMX, registres), gestion des interruptions et validation temps réel des données.
